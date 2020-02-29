@@ -6,7 +6,7 @@
 ```
 docker network create keycloak-network
 ```
-## Run postgres using the above network and local host volumn
+## Run postgres using the above network and local host volume
 ```
 docker run -d --name postgres --net keycloak-network -v path/to/local/host/volume:/var/lib/postgresql/data -e POSTGRES_DB=keycloak -e POSTGRES_USER=keycloak -e POSTGRES_PASSWORD=password postgres
 ```
