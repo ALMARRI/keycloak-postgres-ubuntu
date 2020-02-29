@@ -14,3 +14,8 @@ docker run -d --name postgres --net keycloak-network -v path/to/local/host/volum
 ```
 docker run -p 8080:8080 --name keycloak --net keycloak-network -e DB_VENDOR=POSTGRES -e DB_ADDR=postgres -e DB_DATABASE=keycloak -e DB_USER=keycloak -e DB_PASSWORD=password -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/keycloak
 ```
+
+## access URL ##
+```
+http://127.0.0.1:8080/auth
+```
